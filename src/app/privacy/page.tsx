@@ -143,4 +143,3 @@ export default function PrivacyPage() {
     </main>
   );
 }
-休息 / content

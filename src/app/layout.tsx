@@ -39,4 +39,3 @@ export default function RootLayout({
     </html>
   );
 }
-休息 / content

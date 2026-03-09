@@ -149,4 +149,3 @@ export default function TermsPage() {
     </main>
   );
 }
-休息 / content
