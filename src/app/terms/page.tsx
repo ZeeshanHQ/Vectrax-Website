@@ -4,8 +4,11 @@ import { Footer } from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Vectrax by AstraVenta",
-  description: "Terms of Service for Vectrax and AstraVenta products.",
+  title: "Terms of Service",
+  description: "Terms of Service for Vectrax and Astraventa products.",
+  alternates: {
+    canonical: "/terms",
+  },
 };
 
 export default function TermsPage() {
@@ -35,7 +38,7 @@ export default function TermsPage() {
               </h2>
               <p>
                 By accessing or using Vectrax, ComplyMail, Cavexa, LaunchPact,
-                Outrelix, or any other AstraVenta product, you agree to be bound
+                Outrelix, or any other Astraventa product, you agree to be bound
                 by these Terms of Service. If you do not agree, do not use our
                 services.
               </p>
@@ -46,8 +49,8 @@ export default function TermsPage() {
                 2. Description of Services
               </h2>
               <p>
-                Vectrax is an Android application that enables you to manage
-                Supabase databases from your mobile device. AstraVenta provides
+                Vectrax is an app that enables you to manage
+                Supabase databases from your mobile phone. Astraventa provides
                 additional products and services as described on our websites.
                 We reserve the right to modify, suspend, or discontinue any
                 service at any time.
@@ -73,7 +76,7 @@ export default function TermsPage() {
               </h2>
               <p>
                 All content, features, and functionality of our services,
-                including software, design, and branding, are owned by AstraVenta
+                including software, design, and branding, are owned by Astraventa
                 and protected by intellectual property laws. You may not copy,
                 modify, distribute, or create derivative works without our
                 express permission.
@@ -96,7 +99,7 @@ export default function TermsPage() {
                 6. Limitation of Liability
               </h2>
               <p>
-                To the maximum extent permitted by law, AstraVenta shall not be
+                To the maximum extent permitted by law, Astraventa shall not be
                 liable for any indirect, incidental, special, or consequential
                 damages arising from your use of our services.
               </p>
@@ -118,7 +121,7 @@ export default function TermsPage() {
                 8. Contact
               </h2>
               <p>
-                For questions about these Terms, contact AstraVenta at{" "}
+                For questions about these Terms, contact Astraventa at{" "}
                 <a
                   href="https://astraventa.online"
                   target="_blank"
@@ -146,3 +149,4 @@ export default function TermsPage() {
     </main>
   );
 }
+休息 / content

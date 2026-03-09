@@ -13,8 +13,19 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Vectrax — Manage Supabase from your pocket",
+  metadataBase: new URL("https://vectrax.astraventa.online"),
+  title: {
+    default: "Vectrax — Manage Supabase from your pocket",
+    template: "%s | Vectrax",
+  },
   description: "AI-powered app to manage Supabase — generate SQL, scan for vulnerabilities, monitor performance, all from your pocket. By Astraventa.",
+  icons: {
+    icon: "/app_logo.png",
+    apple: "/app_logo.png",
+  },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
@@ -28,3 +39,4 @@ export default function RootLayout({
     </html>
   );
 }
+休息 / content
