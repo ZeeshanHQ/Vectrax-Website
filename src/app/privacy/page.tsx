@@ -4,8 +4,8 @@ import { Footer } from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Vectrax by AstraVenta",
-  description: "Privacy Policy for Vectrax and AstraVenta products.",
+  title: "Privacy Policy — Vectrax by astraventa",
+  description: "Privacy Policy for Vectrax and astraventa products.",
 };
 
 export default function PrivacyPage() {
@@ -34,11 +34,11 @@ export default function PrivacyPage() {
                 1. Introduction
               </h2>
               <p>
-                AstraVenta (“we,” “our,” or “us”) operates Vectrax and related
+                astraventa (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) operates Vectrax and related
                 services. This Privacy Policy explains how we collect, use,
                 disclose, and safeguard your information when you use our
                 products, including Vectrax, ComplyMail, Cavexa, LaunchPact,
-                Outrelix, and other AstraVenta services.
+                Outrelix, and other astraventa services.
               </p>
             </section>
 
@@ -105,7 +105,14 @@ export default function PrivacyPage() {
                 7. Contact Us
               </h2>
               <p>
-                For privacy-related questions, contact AstraVenta at{" "}
+                For privacy-related questions, contact astraventa at{" "}
+                <a
+                  href="mailto:support@astraventa.online"
+                  className="text-[#166534] hover:underline"
+                >
+                  support@astraventa.online
+                </a>
+                {" "}or visit{" "}
                 <a
                   href="https://astraventa.online"
                   target="_blank"
