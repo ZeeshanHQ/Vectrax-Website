@@ -28,7 +28,7 @@ const testimonials = [
   {
     text: "Vectrax feels like a database architect in my pocket. It explains why a query is slow and how to fix it in language everyone on the team understands.",
     image:
-      "https://images.unsplash.com/photo-1544723795-3fb146e77c31?auto=format&fit=crop&w=200&q=80",
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
     name: "Omar Khalid",
     role: "Database Architect",
   },
