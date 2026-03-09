@@ -14,7 +14,7 @@ const syne = Syne({
 
 export const metadata: Metadata = {
   title: "Vectrax — Manage Supabase from your pocket",
-  description: "AI-powered Android app to manage Supabase — generate SQL, scan for vulnerabilities, monitor performance, all from your pocket. By Astraventa.",
+  description: "AI-powered app to manage Supabase — generate SQL, scan for vulnerabilities, monitor performance, all from your pocket. By Astraventa.",
 };
 
 export default function RootLayout({

@@ -59,15 +59,14 @@ export function Hero() {
 
         {/* Heading — using Syne display font for premium feel */}
         <motion.h1
-          className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0a0a0a] tracking-tight leading-[1.1] mb-6"
+          className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0a0a0a] tracking-tight leading-[1.1] mb-8"
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.72, ease: [0.16, 1, 0.3, 1], delay: 0.08 }}
         >
-          Manage Supabase.
-          <br />
+          <span className="block whitespace-nowrap">Manage Supabase.</span>
           <span
-            className="bg-gradient-to-r from-emerald-500 via-teal-500 to-sky-500 bg-clip-text text-transparent"
+            className="block mt-2 bg-gradient-to-r from-emerald-500 via-teal-500 to-sky-500 bg-clip-text text-transparent"
           >
             Anywhere.
           </span>
@@ -81,7 +80,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.26 }}
         >
           Generate SQL with AI, scan for vulnerabilities, monitor live
-          performance, and manage RLS policies — all from your Android phone.
+          performance, and manage RLS policies — all from your phone.
         </motion.p>
 
         {/* Single CTA */}
@@ -95,7 +94,7 @@ export function Hero() {
             href="#"
             className="group inline-flex items-center gap-2.5 px-8 py-3.5 rounded-xl bg-[#0a0a0a] text-white text-sm font-semibold shadow-[0_6px_28px_rgba(0,0,0,0.18)] hover:shadow-[0_8px_36px_rgba(16,185,129,0.26)] hover:bg-[#1c1c1c] transition-all duration-200"
           >
-            Download on Android
+            Download for phone
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
           </a>
         </motion.div>
