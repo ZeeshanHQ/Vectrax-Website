@@ -19,7 +19,7 @@ export function Hero() {
     <section
       id="hero"
       ref={ref}
-      className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-[160px] overflow-hidden bg-white"
+      className="relative min-h-[90vh] flex flex-col items-center justify-center pt-32 pb-[120px] overflow-hidden bg-white"
     >
       <HeroOrbs />
       <CursorGlow />
@@ -59,7 +59,7 @@ export function Hero() {
 
         {/* Heading — using Syne display font for premium feel */}
         <motion.h1
-          className="font-display text-[2.8rem] sm:text-6xl md:text-7xl font-extrabold text-[#0a0a0a] tracking-[-0.04em] leading-[1.0] mb-5"
+          className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0a0a0a] tracking-tight leading-[1.1] mb-6"
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.72, ease: [0.16, 1, 0.3, 1], delay: 0.08 }}

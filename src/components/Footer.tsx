@@ -16,7 +16,7 @@ import Image from "next/image";
 
 const productLinks = [
   {
-    name: "astraventa",
+    name: "Astraventa",
     url: "https://astraventa.online",
     icon: Globe,
     description: "Main company portal",
@@ -94,7 +94,7 @@ export function Footer() {
               </span>
             </a>
             <p className="text-sm text-[#666] leading-relaxed max-w-[240px]">
-              Manage Supabase from your pocket. By astraventa.
+              Manage Supabase from your pocket. By Astraventa.
             </p>
           </motion.div>
 
@@ -186,7 +186,7 @@ export function Footer() {
           className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"
         >
           <p className="text-sm text-[#888]">
-            © {new Date().getFullYear()} astraventa. All rights reserved.
+            © {new Date().getFullYear()} Astraventa. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm">
             <a
