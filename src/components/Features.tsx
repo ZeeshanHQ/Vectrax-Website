@@ -1,27 +1,43 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Table2, Database, Smartphone } from "lucide-react";
-import { SectionOrb } from "./AnimatedOrbs";
 
-const features = [
+const featureCards = [
   {
-    icon: Table2,
-    title: "Manage Tables",
+    title: "AI-generated SQL, tuned for Supabase",
     description:
-      "View, edit, and organize your Supabase tables from anywhere. No laptop required.",
+      "Turn natural language into safe, optimized queries that respect your schema, RLS, and performance constraints.",
+    tag: "AI copilot",
   },
   {
-    icon: Database,
-    title: "Run Queries",
+    title: "Full-project scans in seconds",
     description:
-      "Execute SQL queries and browse results in real time. Your database in your pocket.",
+      "Continuously scan your instance for missing indexes, unused tables, and slow queries before they hurt users.",
+    tag: "Health checks",
   },
   {
-    icon: Smartphone,
-    title: "Native Android",
+    title: "Vulnerability & policy insights",
     description:
-      "Built for Android. Clean, fast, and designed for developers on the go.",
+      "Spot risky public tables, overly broad policies, and misconfigured roles with clear, actionable suggestions.",
+    tag: "Security",
+  },
+  {
+    title: "Safe one-tap maintenance",
+    description:
+      "Restart services, rotate keys, and trigger backups from Android with guardrails and clear confirmation flows.",
+    tag: "Control",
+  },
+  {
+    title: "Guided query workspace",
+    description:
+      "Experiment with queries, compare plans, and save the ones that matter—all with inline explanations from AI.",
+    tag: "Workflow",
+  },
+  {
+    title: "Production-ready defaults",
+    description:
+      "Opinionated presets for logging, retention, and monitoring so new projects start from a strong baseline.",
+    tag: "Best practices",
   },
 ];
 
@@ -29,46 +45,94 @@ export function Features() {
   return (
     <section
       id="features"
-      className="relative py-[150px] px-8 overflow-hidden"
+      className="relative overflow-hidden bg-[#FFFFFF] text-[#0a0a0a] border-t border-b border-[#f3f4f6] py-20 sm:py-24"
     >
-      <SectionOrb className="top-20 -right-32" />
-      <div className="max-w-6xl mx-auto">
-        <p className="text-xs uppercase tracking-widest text-[#888] mb-3">
-          Features
-        </p>
-        <h2 className="text-xl font-bold text-[#0a0a0a] tracking-tight mb-16">
-          Built for database workflows
-        </h2>
+      <div className="relative max-w-6xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="text-center max-w-3xl mx-auto"
+        >
+          <p className="text-xs uppercase tracking-[0.3em] text-[#9ca3af] mb-4">
+            Why Vectrax
+          </p>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4">
+            An AI copilot for your Supabase.
+          </h2>
+          <p className="text-sm sm:text-base text-[#4b5563] leading-relaxed">
+            Vectrax blends realtime observability with an AI assistant that understands your schema,
+            queries, and policies – so you can manage production databases confidently from anywhere.
+          </p>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12">
-          {features.map((feature, i) => (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.98 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+          className="mt-12 grid gap-5 sm:gap-6 md:grid-cols-3"
+        >
+          {featureCards.map((feature, index) => (
             <motion.div
               key={feature.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="flex flex-col"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{
+                duration: 0.45,
+                delay: 0.12 + index * 0.04,
+                ease: "easeOut",
+              }}
+              className="relative overflow-hidden rounded-3xl border border-[#e5e7eb] bg-white/90 p-5 sm:p-6 shadow-[0_12px_30px_rgba(15,23,42,0.05)]"
             >
-              <motion.div
-                className="mb-5 w-8 h-8 flex items-center justify-center text-[#0a0a0a]"
-                whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 400 }}
-              >
-                <feature.icon className="w-5 h-5" strokeWidth={1.5} />
-              </motion.div>
-              <h3 className="text-base font-semibold text-[#0a0a0a] mb-2">
+              {/* corner dots */}
+              <span className="pointer-events-none absolute -top-1.5 -left-1.5 h-2.5 w-2.5 rounded-full border border-[#e5e7eb] bg-white" />
+              <span className="pointer-events-none absolute -top-1.5 -right-1.5 h-2.5 w-2.5 rounded-full border border-[#e5e7eb] bg-white" />
+              <span className="pointer-events-none absolute -bottom-1.5 -left-1.5 h-2.5 w-2.5 rounded-full border border-[#e5e7eb] bg-white" />
+              <span className="pointer-events-none absolute -bottom-1.5 -right-1.5 h-2.5 w-2.5 rounded-full border border-[#e5e7eb] bg-white" />
+
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-xs font-medium tracking-[0.2em] uppercase text-[#9ca3af]">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="text-xs text-[#9ca3af]">↗</span>
+              </div>
+
+              <div className="inline-flex items-center gap-2 rounded-full border border-[#e5e7eb] bg-[#f9fafb] px-3 py-1 mb-3">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                <span className="text-[11px] uppercase tracking-[0.16em] text-[#4b5563]">
+                  {feature.tag}
+                </span>
+              </div>
+
+              <h3 className="font-display text-sm sm:text-base font-semibold text-[#0f172a] mb-2">
                 {feature.title}
               </h3>
-              <p
-                className="text-[15px] text-[#666]"
-                style={{ lineHeight: 1.7 }}
-              >
+              <p className="text-xs sm:text-sm text-[#6b7280] leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-10 flex flex-wrap items-center justify-center gap-3 text-[11px] sm:text-xs text-[#6b7280]"
+        >
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e5e7eb] bg-[#f9fafb] px-3 py-1">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+            AI understands your schema and RLS policies.
+          </span>
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e5e7eb] bg-[#f9fafb] px-3 py-1">
+            <span className="h-1.5 w-1.5 rounded-full bg-sky-500" />
+            Designed for real production Supabase workloads.
+          </span>
+        </motion.div>
       </div>
     </section>
   );

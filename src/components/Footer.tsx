@@ -16,6 +16,12 @@ import Image from "next/image";
 
 const productLinks = [
   {
+    name: "AstraVenta",
+    url: "https://astraventa.online",
+    icon: Globe,
+    description: "Main company portal",
+  },
+  {
     name: "ComplyMail",
     url: "https://comply.astraventa.online",
     icon: Mail,
@@ -26,12 +32,6 @@ const productLinks = [
     url: "https://shorts.cavexa.online",
     icon: Sparkles,
     description: "Short-form video content",
-  },
-  {
-    name: "AstraVenta",
-    url: "https://astraventa.online",
-    icon: Globe,
-    description: "Main company portal",
   },
   {
     name: "Cavexa",
