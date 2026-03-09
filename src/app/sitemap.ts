@@ -24,4 +24,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     ];
 }
-休息 / content

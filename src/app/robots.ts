@@ -10,4 +10,3 @@ export default function robots(): MetadataRoute.Robots {
         sitemap: "https://vectrax.astraventa.online/sitemap.xml",
     };
 }
-休息 / content

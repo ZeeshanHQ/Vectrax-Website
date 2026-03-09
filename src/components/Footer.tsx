@@ -114,7 +114,6 @@ export function Footer() {
                   <a
                     href={item.url}
                     target="_blank"
-                    rel="noopener noreferrer"
                     className="group flex items-center gap-2.5 text-sm text-[#444] hover:text-[#0a0a0a] transition-colors"
                   >
                     <item.icon className="w-3.5 h-3.5 text-[#999] group-hover:text-[#0a0a0a] transition-colors flex-shrink-0" />
