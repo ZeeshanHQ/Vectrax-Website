@@ -1,6 +1,6 @@
 # Vectrax Landing Page
 
-A premium, minimal landing page for the Vectrax Android app. Built with Next.js, Tailwind CSS, and Framer Motion.
+A premium, minimal landing page for the Vectrax phone app. Built with Next.js, Tailwind CSS, and Framer Motion.休息
 
 ## Features
 
