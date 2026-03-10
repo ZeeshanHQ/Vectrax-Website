@@ -64,23 +64,23 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.72, ease: [0.16, 1, 0.3, 1], delay: 0.08 }}
         >
-          <span className="block whitespace-nowrap">Manage Supabase.</span>
+          <span className="block">Agentic Supabase</span>
           <span
             className="block mt-2 bg-gradient-to-r from-emerald-500 via-teal-500 to-sky-500 bg-clip-text text-transparent"
           >
-            Anywhere.
+            Intelligence.
           </span>
         </motion.h1>
 
         {/* Tagline */}
         <motion.p
-          className="mt-4 text-[15px] sm:text-[17px] text-[#5a6474] max-w-[520px] mx-auto leading-[1.75]"
+          className="mt-4 text-[15px] sm:text-[17px] text-[#5a6474] max-w-[580px] mx-auto leading-[1.75]"
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.26 }}
         >
-          Generate SQL with AI, scan for vulnerabilities, monitor live
-          performance, and manage RLS policies — all from your phone.
+          Your AI-powered Supabase Command Center. Real-time observability,
+          autonomous schema guidance, and safe actions for production DBs, anywhere.
         </motion.p>
 
         {/* Single CTA */}

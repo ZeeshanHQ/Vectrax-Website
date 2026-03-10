@@ -16,20 +16,21 @@ const syne = Syne({
 export const metadata: Metadata = {
   metadataBase: new URL("https://vectrax.astraventa.online"),
   title: {
-    default: "Vectrax — Manage Supabase from your pocket",
+    default: "Vectrax | Agentic Supabase Intelligence for Mobile",
     template: "%s | Vectrax",
   },
-  description: "AI-powered app to manage Supabase — generate SQL, scan for vulnerabilities, monitor performance, all from your pocket. By Astraventa.",
+  description: "Your AI-powered Supabase Command Center. Real-time observability, autonomous schema guidance, and safe actions for production DBs, anywhere.",
   icons: {
-    icon: "/app_logo.png",
-    apple: "/app_logo.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Vectrax — Manage Supabase from your pocket",
-    description: "AI-powered app to manage Supabase — generate SQL, scan for vulnerabilities, monitor performance, all from your pocket.",
+    title: "Vectrax | Agentic Supabase Intelligence",
+    description: "Your AI-powered Supabase Command Center. Real-time observability, autonomous schema guidance, and safe actions for production DBs, anywhere.",
     url: "https://vectrax.astraventa.online",
     siteName: "Vectrax",
     images: [
