@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
+  manifest: "/site.webmanifest",
   alternates: {
     canonical: "/",
   },
