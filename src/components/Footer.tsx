@@ -70,16 +70,15 @@ export function Footer() {
       {/* Subtle gradient accent */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#f5f5f5] pointer-events-none" />
 
-      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 lg:py-24">
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 py-16 lg:py-24">
         {/* Main footer content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 pb-16 border-b border-[#e5e5e5]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 pb-16 border-b border-[#e5e5e5]">
           {/* Brand column */}
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
-            className="lg:col-span-1"
           >
             <a href="/" className="flex items-center gap-2.5 mb-4">
               <Image

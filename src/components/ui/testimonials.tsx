@@ -78,7 +78,7 @@ export default function Testimonials() {
     <section className="bg-background my-24 relative">
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background via-background to-background/80" />
 
-      <div className="relative container mx-auto px-6 max-w-6xl">
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

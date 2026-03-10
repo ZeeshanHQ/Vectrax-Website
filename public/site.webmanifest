@@ -1,7 +1,7 @@
 {
-    "name": "Vectrax",
+    "name": "Astraventa",
     "short_name": "Vectrax",
-    "description": "Your AI-powered Supabase Command Center.",
+    "description": "Vectrax blends realtime observability with an AI assistant that understands your schema, queries, and policies.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",

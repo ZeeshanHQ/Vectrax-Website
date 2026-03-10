@@ -47,13 +47,13 @@ export function Features() {
       id="features"
       className="relative overflow-hidden bg-[#FFFFFF] text-[#0a0a0a] border-t border-b border-[#f3f4f6] py-20 sm:py-24"
     >
-      <div className="relative max-w-6xl mx-auto px-6">
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-center max-w-3xl mx-auto"
+          className="text-center max-w-3xl mx-auto mb-16 sm:mb-20"
         >
           <p className="text-xs uppercase tracking-[0.3em] text-[#9ca3af] mb-4">
             Why Vectrax
@@ -70,22 +70,22 @@ export function Features() {
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-          className="mt-12 grid gap-5 sm:gap-6 md:grid-cols-3"
+          className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3"
         >
           {featureCards.map((feature, index) => (
             <motion.div
               key={feature.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{
                 duration: 0.45,
                 delay: 0.12 + index * 0.04,
                 ease: "easeOut",
               }}
-              className="relative overflow-hidden rounded-3xl border border-[#e5e7eb] bg-white/90 p-5 sm:p-6 shadow-[0_12px_30px_rgba(15,23,42,0.05)]"
+              className="relative overflow-hidden rounded-3xl border border-[#e5e7eb] bg-white/90 p-6 sm:p-8 shadow-[0_12px_30px_rgba(15,23,42,0.05)] hover:shadow-[0_20px_50px_rgba(15,23,42,0.08)] transition-all duration-300"
             >
               {/* corner dots */}
               <span className="pointer-events-none absolute -top-1.5 -left-1.5 h-2.5 w-2.5 rounded-full border border-[#e5e7eb] bg-white" />

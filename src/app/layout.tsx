@@ -16,10 +16,10 @@ const syne = Syne({
 export const metadata: Metadata = {
   metadataBase: new URL("https://vectrax.astraventa.online"),
   title: {
-    default: "Vectrax | Agentic Supabase Intelligence for Mobile",
+    default: "Vectrax — Manage Supabase from your pocket - Astraventa",
     template: "%s | Vectrax",
   },
-  description: "Your AI-powered Supabase Command Center. Real-time observability, autonomous schema guidance, and safe actions for production DBs, anywhere.",
+  description: "Vectrax blends realtime observability with an AI assistant that understands your schema, queries, and policies – so you can manage production databases confidently from anywhere.",
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Vectrax | Agentic Supabase Intelligence",
-    description: "Your AI-powered Supabase Command Center. Real-time observability, autonomous schema guidance, and safe actions for production DBs, anywhere.",
+    title: "Vectrax — Manage Supabase from your pocket",
+    description: "Vectrax blends realtime observability with an AI assistant that understands your schema, queries, and policies.",
     url: "https://vectrax.astraventa.online",
-    siteName: "Vectrax",
+    siteName: "Astraventa",
     images: [
       {
         url: "/og-image.png",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Vectrax — Manage Supabase from your pocket",
-    description: "AI-powered app to manage Supabase — generate SQL, scan for vulnerabilities, monitor performance, all from your pocket.",
+    description: "Vectrax blends realtime observability with an AI assistant that understands your schema, queries, and policies.",
     images: ["/og-image.png"],
   },
 };

@@ -7,31 +7,31 @@ export function DatabaseStatus() {
   return (
     <section
       id="database"
-      className="relative bg-[#F9FAFB] border-t border-[#E5E7EB] py-20 sm:py-24"
+      className="relative bg-[#F9FAFB] border-t border-[#E5E7EB] py-20 sm:py-24 lg:py-32"
     >
-      <div className="max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
-        <div className="flex-1 max-w-xl">
-          <p className="text-xs uppercase tracking-[0.3em] text-[#9ca3af] mb-3">
+      <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+        <div className="flex-1 max-w-xl text-center lg:text-left">
+          <p className="text-xs uppercase tracking-[0.3em] text-[#9ca3af] mb-4">
             Live Supabase overview
           </p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-[#0f172a] mb-4">
+          <h2 className="font-display text-4xl sm:text-5xl font-bold tracking-tight text-[#0f172a] mb-6 leading-[1.1]">
             See the health of every project at a glance.
           </h2>
-          <p className="text-sm sm:text-base text-[#4b5563] leading-relaxed mb-6">
+          <p className="text-sm sm:text-base md:text-lg text-[#4b5563] leading-relaxed mb-8">
             Vectrax pulls the most important Supabase signals into a single mobile screen—uptime,
             performance, and security—so you can decide in seconds whether to relax or respond.
           </p>
-          <ul className="space-y-3 text-sm text-[#4b5563]">
-            <li className="flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+          <ul className="space-y-4 text-sm sm:text-base text-[#4b5563] inline-block text-left">
+            <li className="flex items-center gap-3">
+              <span className="h-2 w-2 rounded-full bg-emerald-500 shrink-0" />
               Instant status for all Supabase projects in your workspace.
             </li>
-            <li className="flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-sky-500" />
+            <li className="flex items-center gap-3">
+              <span className="h-2 w-2 rounded-full bg-sky-500 shrink-0" />
               AI notes that explain spikes, slow queries, and risky changes.
             </li>
-            <li className="flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-amber-500" />
+            <li className="flex items-center gap-3">
+              <span className="h-2 w-2 rounded-full bg-amber-500 shrink-0" />
               One‑tap actions to drill into logs, policies, or backups.
             </li>
           </ul>
